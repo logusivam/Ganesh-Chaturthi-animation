@@ -1,124 +1,113 @@
-html
-{
-    background-color: #ffe9de;
+/* 
+ * Code reference by - https://codepen.io/bosworthco/pen/YWBLpR
+** Change this if you need to modify
+** the amount of lines displayed
+*/
+/*
+** Leave these unless you want
+** to open a whole can of worms
+*/
+/*
+** Set up the experiment
+*/
+html {
+    background-color: #FFE9DE;
     height: 100%;
-}
-
-body
-{
-    color: rgb(255, 0, 238);
+  }
+  
+  body {
+    color: blue;
     display: -webkit-box;
     display: flex;
-}
-
-/* image style */
-.ganesha
-{
+  }
+  
+  /*
+  ** Apply styles to the parent element
+  */
+  .ganesha{
     display: block;
     width: 100%;
     text-align: center;
-}
-
-/* words styles starts */
-.other-div
-{
-    display: block;
-    position: absolute;
-    top: 32%;
-    left: 32%;
-}
-
-.words
-{
+  }
+  .other-div{
+        display: block;
+      position: absolute;
+      top: 32%;
+      left: 32%;
+  }
+  .Words {
     margin: 0 auto;
     padding: 80px 0;
-    font-family: 'SOurce Sans Pro', Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     font-size: 68px;
     font-weight: 900;
     letter-spacing: -2px;
     text-transform: uppercase;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
     -webkit-font-smoothing: antialiased;
     -webkit-font-kerning: normal;
-    font-kerning: normal;
     -webkit-text-size-adjust: 100%;
-}
-
-/* styles to each line starts */
-.words-line
-{
+  }
+  
+  /*
+  ** Apply common styles to each line of text
+  */
+  .Words-line {
     height: 50px;
     overflow: hidden;
     position: relative;
-}
-
-.words-line:nth-child(odd)
-{
+  }
+  .Words-line:nth-child(odd) {
     -webkit-transform: skew(60deg, -30deg) scaleY(0.66667);
-    transform: skew(60deg, -30deg) scaleY(0.66667);
-}
-
-.words-line:nth-child(even)
-{
+            transform: skew(60deg, -30deg) scaleY(0.66667);
+  }
+  .Words-line:nth-child(even) {
     -webkit-transform: skew(0deg, -30deg) scaleY(1.33333);
-    transform: skew(0deg, -30deg) scaleY(1.33333);
-}
-
-.words-line:nth-child(1)
-{
+            transform: skew(0deg, -30deg) scaleY(1.33333);
+  }
+  .Words-line:nth-child(1) {
     left: 29px;
-}
-
-.words-line:nth-child(2)
-{
+  }
+  .Words-line:nth-child(2) {
     left: 58px;
-}
-
-.words-line:nth-child(3)
-{
+  }
+  .Words-line:nth-child(3) {
     left: 87px;
-}
-
-.words-line:nth-child(4)
-{
+  }
+  .Words-line:nth-child(4) {
     left: 116px;
-}
-
-.words-line:nth-child(5)
-{
+  }
+  .Words-line:nth-child(5) {
     left: 145px;
-}
-
-.words-line:nth-child(6)
-{
+  }
+  .Words-line:nth-child(6) {
     left: 174px;
-}
-
-.words-line:nth-child(7)
-{
+  }
+  .Words-line:nth-child(7) {
     left: 203px;
-}
-/* styles to each line ends */
-/* words styles ends */
-
-/* gradient text style */
-p
-{
+  }
+  
+  /*
+  ** Fine-grained text styles
+  */
+  p {
     height: 50px;
     line-height: 45px;
     padding: 0 10px;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
     vertical-align: top;
     white-space: nowrap;
-}
-
-/* hover effect */
-.words:hover p 
-{
+  }
+  
+  /*
+  ** The hover interaction
+  */
+  .Words:hover p {
     -webkit-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
-}
+            transform: translate3d(0, -50px, 0);
+  }
+  
