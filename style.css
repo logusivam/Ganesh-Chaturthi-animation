@@ -58,5 +58,67 @@ body
     -webkit-transform: skew(60deg, -30deg) scaleY(0.66667);
     transform: skew(60deg, -30deg) scaleY(0.66667);
 }
+
+.words-line:nth-child(even)
+{
+    -webkit-transform: skew(0deg, -30deg) scaleY(1.33333);
+    transform: skew(0deg, -30deg) scaleY(1.33333);
+}
+
+.words-line:nth-child(1)
+{
+    left: 29px;
+}
+
+.words-line:nth-child(2)
+{
+    left: 58px;
+}
+
+.words-line:nth-child(3)
+{
+    left: 87px;
+}
+
+.words-line:nth-child(4)
+{
+    left: 116px;
+}
+
+.words-line:nth-child(5)
+{
+    left: 145px;
+}
+
+.words-line:nth-child(6)
+{
+    left: 174px;
+}
+
+.words-line:nth-child(7)
+{
+    left: 203px;
+}
 /* styles to each line ends */
 /* words styles ends */
+
+/* gradient text style */
+p
+{
+    height: 50px;
+    line-height: 45px;
+    padding: 0 10px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+/* hover effect */
+.words:hover p 
+{
+    -webkit-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0);
+}
