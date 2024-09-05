@@ -32,7 +32,7 @@ body
 {
     margin: 0 auto;
     padding: 80px 0;
-    font-family: 'SOurce Sans Pro', Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     font-size: 68px;
     font-weight: 900;
     letter-spacing: -2px;
@@ -42,64 +42,27 @@ body
     -webkit-font-smoothing: antialiased;
     -webkit-font-kerning: normal; 
     -webkit-text-size-adjust: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f, 0 0 60px #f0f, 0 0 80px #f0f;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
 }
 
-/* styles to each line starts */
+/* words-line styling removed for neon effect */
 .words-line
 {
-    height: 50px;
-    overflow: hidden;
-    position: relative;
+    display: inline-block;
 }
 
-.words-line:nth-child(odd)
-{
-    -webkit-transform: skew(60deg, -30deg) scaleY(0.66667);
-    transform: skew(60deg, -30deg) scaleY(0.66667);
+/* Keyframes for the neon glowing effect */
+@keyframes neon-glow {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f, 0 0 60px #f0f, 0 0 80px #f0f;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 50px #ff0, 0 0 75px #ff0, 0 0 100px #ff0;
+    }
 }
-
-.words-line:nth-child(even)
-{
-    -webkit-transform: skew(0deg, -30deg) scaleY(1.33333);
-    transform: skew(0deg, -30deg) scaleY(1.33333);
-}
-
-.words-line:nth-child(1)
-{
-    left: 29px;
-}
-
-.words-line:nth-child(2)
-{
-    left: 58px;
-}
-
-.words-line:nth-child(3)
-{
-    left: 87px;
-}
-
-.words-line:nth-child(4)
-{
-    left: 116px;
-}
-
-.words-line:nth-child(5)
-{
-    left: 145px;
-}
-
-.words-line:nth-child(6)
-{
-    left: 174px;
-}
-
-.words-line:nth-child(7)
-{
-    left: 203px;
-}
-/* styles to each line ends */
-/* words styles ends */
 
 /* gradient text style */
 p
@@ -113,11 +76,4 @@ p
     transform: translate3d(0, 0, 0);
     vertical-align: top;
     white-space: nowrap;
-}
-
-/* hover effect */
-.words:hover p 
-{
-    -webkit-transform: translate3d(0,-50px,0);
-    transform: translate3d(0,-50px,0);
 }
