@@ -44,4 +44,18 @@ body
     font-kerning: normal;
     -webkit-text-size-adjust: 100%;
 }
+
+/* styles to each line starts */
+.words-line
+{
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.words-line:nth-child(odd)
+{
+    
+}
+/* styles to each line ends */
 /* words styles ends */
