@@ -58,10 +58,10 @@ body
 /* Keyframes for the neon glowing effect */
 @keyframes neon-glow {
     0% {
-        text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f, 0 0 60px #f0f, 0 0 80px #f0f;
+        text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f, 0 0 60px #f0f, 0 0 80px rgb(0, 8, 255);
     }
     100% {
-        text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 50px #ff0, 0 0 75px #ff0, 0 0 100px #ff0;
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 50px #ff0, 0 0 75px #ff0, 0 0 100px rgb(21, 255, 0);
     }
 }
 
