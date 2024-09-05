@@ -49,6 +49,7 @@ body
 .words-line
 {
     height: 50px;
+    overflow: hidden;
     position: relative;
 }
 
