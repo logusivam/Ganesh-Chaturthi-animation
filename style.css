@@ -55,7 +55,8 @@ body
 
 .words-line:nth-child(odd)
 {
-    
+    -webkit-transform: skew(60deg, -30deg) scaleY(0.66667);
+    transform: skew(60deg, -30deg) scaleY(0.66667);
 }
 /* styles to each line ends */
 /* words styles ends */
