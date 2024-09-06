@@ -17,7 +17,7 @@ This project features a divine image of Lord Ganesha, along with a neon-glowing 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/logusivamm/Ganesha-Chaturthi-animation.git
+   git clone https://github.com/logusivam/Ganesha-Chaturthi-animation.git
    ```
 
 2. **Navigate to the Project Directory:**
